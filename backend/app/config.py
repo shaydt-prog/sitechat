@@ -80,6 +80,8 @@ class Settings(BaseSettings):
     
     # Provider-specific API keys
     OPENAI_API_KEY: Optional[str] = None
+    # Override to point the "openai" provider at an OpenAI-compatible endpoint (e.g. Groq)
+    OPENAI_BASE_URL: Optional[str] = None
     ANTHROPIC_API_KEY: Optional[str] = None
     AZURE_OPENAI_ENDPOINT: Optional[str] = None
     AZURE_OPENAI_API_KEY: Optional[str] = None
